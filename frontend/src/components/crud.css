@@ -1,0 +1,43 @@
+.inputs {
+  display: grid;
+  place-items: center;
+}
+input {
+  padding: 5px 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid lightgray;
+}
+input:focus {
+  border: 1px solid #5b9fde;
+}
+
+button {
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:not(:first-child) {
+  margin-left: 10px;
+}
+
+.error,
+.msg {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  min-width: 200px;
+}
+
+.error {
+  background-color: #edc0c3;
+}
+
+.msg {
+  background-color: #c4f2d7;
+}
