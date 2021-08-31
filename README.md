@@ -1,11 +1,16 @@
-###CRUD OPERATIONS WITH IN MERN:
+## CRUD OPERATIONS IN MERN
+
 It is an internship initial task to have an understanding with the MERN.
 
 By MERN I mean
-**M -> MySQL**
-**E -> ExpressJS**
-**R -> ReacJS**
-**N -> NodeJS**
+
+-**M -> MySQL**
+
+-**E -> ExpressJS**
+
+-**R -> ReacJS**
+
+-**N -> NodeJS**
 
 Following modules were used in this project.
 
@@ -27,17 +32,13 @@ Following modules were used in this project.
 
 > npm i -D concurrently
 
-### **mongoose**
-
-##### It is Object Data Modeling library for MongoDB and NodeJS. It is used to translate between objects in code and their representation in MongoDB. It allows us to create a model and schema for different resources in our database.
-
 ### colors
 
 ##### Used to add colors to console
 
 > npm i colors
 
-### SETTING UP BABEL FOR NODE
+## SETTING UP BABEL FOR NODE
 
 - Install node with following command and name your server file with server.js or index.js name or whatever you like.
 
@@ -49,17 +50,19 @@ Following modules were used in this project.
 
 - Next step is to create a .babelrc file. And add following code to it
 
-  > {
-  > "presets": [
+  ````{
+      "presets": [
 
-      "@babel/preset-env"
+         "@babel/preset-env"
 
-  ]
-  }
+      ]
+  }```
+
+  ````
 
 - Now, go to package.json file and in the scripts, add following command to start your server using babel configuration.
 
-> "start": "babel-node ./src/index.js"
+`"start": "babel-node ./src/index.js"`
 
 Now to use ES6, change your import/export statements from CommonJS to ES6 import/export statements.
 
@@ -75,7 +78,7 @@ Now to use ES6, change your import/export statements from CommonJS to ES6 import
 
 - Replace the start script in **scripts** in **package.json** with
 
-  > "start": "nodemon --exec babel-node backend/server.js"
+  `"start": "nodemon --exec babel-node backend/server.js"`
 
 - Now you can run your code using
   > npm start
