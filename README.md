@@ -63,7 +63,9 @@ Following modules were used in this project.
 
 - Now, go to package.json file and in the scripts, add following command to start your server using babel configuration.
 
-`"start": "babel-node ./src/index.js"`
+  ```
+  "start": "babel-node ./src/index.js"
+  ```
 
 Now to use ES6, change your import/export statements from CommonJS to ES6 import/export statements.
 
@@ -79,7 +81,9 @@ Now to use ES6, change your import/export statements from CommonJS to ES6 import
 
 - Replace the start script in **scripts** in **package.json** with
 
-  `"start": "nodemon --exec babel-node backend/server.js"`
+  ```
+  "start": "nodemon --exec babel-node backend/server.js"
+  ```
 
 - Now you can run your code using
   > npm start
