@@ -8,8 +8,14 @@ const CRUD = () => {
   const [error, setError] = useState('')
   const [msg, setMsg] = useState('')
 
+  const setToEmpty = () => {
+    setMsg('')
+    setError('')
+  }
+
   const addHandler = async (e) => {
     e.preventDefault()
+    setToEmpty()
     const config = {
       headers: {
         'Content-Type': 'application/json',
@@ -25,6 +31,7 @@ const CRUD = () => {
 
   const getHandler = async (e) => {
     e.preventDefault()
+    setToEmpty()
     const { data } = await axios.get(`/${email}`)
     if (data.error) {
       setError(data.error)
@@ -35,6 +42,7 @@ const CRUD = () => {
 
   const deleteHandler = async (e) => {
     e.preventDefault()
+    setToEmpty()
     const { data } = await axios.delete(`/${email}`)
     if (data.error) {
       setError(data.error)
@@ -45,6 +53,7 @@ const CRUD = () => {
 
   const updateHandler = async (e) => {
     e.preventDefault()
+    setToEmpty()
     const config = {
       headers: {
         'Content-Type': 'application/json',
