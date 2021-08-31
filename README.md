@@ -50,15 +50,16 @@ Following modules were used in this project.
 
 - Next step is to create a .babelrc file. And add following code to it
 
-  ````{
-      "presets": [
+  ```
+    {
+        "presets": [
 
-         "@babel/preset-env"
+            "@babel/preset-env"
 
-      ]
-  }```
+        ]
+    }
 
-  ````
+  ```
 
 - Now, go to package.json file and in the scripts, add following command to start your server using babel configuration.
 
