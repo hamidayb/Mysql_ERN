@@ -4,13 +4,13 @@ It is an internship initial task to have an understanding with the MERN.
 
 By MERN I mean
 
--**M -> MySQL**
+&nbsp;&nbsp;&nbsp;**M -> MySQL**
 
--**E -> ExpressJS**
+&nbsp;&nbsp;&nbsp;**E -> ExpressJS**
 
--**R -> ReacJS**
+&nbsp;&nbsp;&nbsp;**R -> ReacJS**
 
--**N -> NodeJS**
+&nbsp;&nbsp;&nbsp;**N -> NodeJS**
 
 Following modules were used in this project.
 
